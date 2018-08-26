@@ -19,7 +19,7 @@ after_initialize do
 
 	add_to_serializer(:group_user, :bio_cooked) {
 		if object.user_profile
-			object.user_profile.bio_raw
+			object.user_profile.bio_cooked
 		end
 	}
 
